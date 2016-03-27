@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <title>Курс по JS</title>
+        
+    </head>
+
+    <body>
+       <div>
+          
+           <script type="text/javascript">
+           
+               
+               var arr=["Name", 55, "age"];
+               
+               var kol=arr.length;
+               document.write(kol);
+               
+               var students=["Nik", "Lena", "Olya", "Nika", "Snezhana"];
+              
+               students.push("Sakura");
+               
+               var kol=students.length;
+               document.write(kol);
+               document.write(students[5]);
+               
+               
+               students.unshift("VOVA"); //Добавили в начало массива элемент
+               
+               document.write(students[0]);
+               document.write("<br><br>Last child:"+students[students.length-1]+"<br>");
+               students.pop(); //удаление крайнего элемента массива
+               document.write(students[students.length-1]);   // после удаления уже крайний поменялмся
+               
+               document.write("<br>Первый студент: "+students[0]);
+               document.write("<br>Удаляем первый элемент<br>");
+               students.shift();
+               document.write("First now: "+students[0]);
+               
+               
+    
+           </script>
+           
+        </div>
+    </body>
+</html>
