@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <title>Курс по JS</title>
+        
+    </head>
+
+    <body>
+       <div>
+          
+           <script type="text/javascript">
+           
+               
+               var students=["Nik", "Lena", "Olya", "Nika", "Snezhana", "Igor"];
+              
+               students.splice(2,4);
+               
+               document.write(students+"<br>");
+               
+               students.splice(1,0,"Valery","Dima","Evgeny"); //начиная с 1 элемента вставляет имена из списка
+               
+               document.write(students+"<br>");
+               
+               students.splice(2,2,"Dzhordzh","Lina"); //заменяет 2 элемента начиная со Второго и заменяет на те, что в списке
+               
+               document.write(students+"<br>");
+               
+               
+               
+               
+    
+           </script>
+           
+        </div>
+    </body>
+</html>
