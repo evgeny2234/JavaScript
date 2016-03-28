@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <title>Курс по JS</title>
+        
+    </head>
+
+    <body>
+       <div>
+          
+           <script type="text/javascript">
+           
+               
+               var students=["Nik", "Lena", "Olya", "Nika", "Snezhana", "Igor"];
+              
+               students.reverse();
+               
+               document.write(students);
+               
+               students.sort();
+               
+               document.write("<br>"+students+"<br>");
+               
+               document.write(students.join("-"));   //разделитель вместо запятой ставит тотзнак что Мы укажем
+               
+               
+               var cars=["Mers","BMW","Toyota","Folkwagen","Rexton","Audi"];
+               var drivers=["Alex","John","Max","Lena","Vlad","Viktor"];
+               
+               document.write("<br>"+cars+drivers+"<br>");
+               
+               var twice = cars.concat(drivers);
+               
+               document.write("<br>"+twice+"<br>");
+               
+               var twice = drivers.concat(cars);
+               
+               document.write("<br>"+twice+"<br>");
+               twice.sort();
+               
+               document.write("<br>"+twice+"<br>");
+               
+               var happy = twice.slice(3,8);
+               
+               document.write("<br>"+happy);
+               
+               
+               
+               
+               
+    
+           </script>
+           
+        </div>
+    </body>
+</html>
