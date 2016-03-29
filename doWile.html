@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <title>Курс по JS</title>
+        
+    </head>
+
+    <body>
+       <div>
+          
+           <script type="text/javascript">
+           
+               
+               var num = 10;
+               
+               do{
+                   document.write("<br>"+num)
+                   num-=1;;
+               }while(num>=0)
+                   
+                   document.write("<br>")
+                   
+                var array=[1,2,3,"Viktor", "Petr", 6, "Mark"];
+               
+               var kol=0;
+               
+               do{
+                   document.write("<br>"+array[kol]);
+                   kol++;
+               }while(kol<array.length)
+         
+                   
+               var cars = ["Mers","BMW","Audi","Toyota"];
+               
+               var people = ["Alex","Kate","Max","john","Evgeny"];
+               
+               
+               var arr2d = [array,cars,people];
+               
+               var i=0;
+               var j=0;
+               
+               do
+                   {
+                       do
+                       {
+                          document.write(" "+arr2d[i][j]); 
+                           j++;
+                       }while(j<arr2d[i].length)
+                           document.write("<br>"); 
+                       j=0;
+                    i++;
+                   }while(i<arr2d.length);
+           
+           </script>
+           
+        </div>
+    </body>
+</html>
