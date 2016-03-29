@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <title>Курс по JS</title>
+        
+    </head>
+
+    <body>
+       <div>
+          
+           <script type="text/javascript">
+           
+               
+               //ищет указанное слово/символ в строке
+//Возвращает символ, с которого начинается совпадение.$anchorScroll
+
+//Или если нет совпадений, то вернет -1
+               var str = "Очень большая Машина! Огромная Машина Ауди";
+                            
+               var res = str.lastIndexOf("Машина");
+               
+               document.write(res);
+               
+               
+               function proverka(stri)
+               {
+                   var check = stri.indexOf("http://");
+                   document.write("<br>"+check);
+                   return check;
+               }
+               
+               var stri = "http://softpick2.com/uploads/posts/2015-11/1447713700_movavi-video-converter.jpg";
+              var p= proverka(stri);
+               
+               if(p>=0)
+                   {
+                       document.write("<br>Include");
+                   }
+               
+               
+               
+           </script>
+           
+        </div>
+    </body>
+</html>
