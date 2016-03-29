@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <title>Курс по JS</title>
+        
+    </head>
+
+    <body>
+       <div>
+          
+           <script type="text/javascript">
+           
+               //метод возвращает ссылку на окно.
+               //3 параметра. 1 - что поместить в окно, 2 - имя окна, 3 - размеры.
+                   
+                var link = window.open("","New","width=500px, height=500px;");
+               
+               link.document.write("Hello world<br>");
+               link.document.write(link);
+               
+               //модальное окно для подтверждения чего-то
+               link.alert("Я модальное окно!");
+               
+               
+               var result = window.prompt("How old are You?", "18");
+               alert("<br> Your age is: "+result);
+               
+               //окно где можно выбрать Ок или НЕ Ок
+               var res = confirm("Do You want something?");
+               document.write(res);
+               
+               //
+           
+           </script>
+           
+        </div>
+    </body>
+</html>
