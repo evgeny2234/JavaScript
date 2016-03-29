@@ -29,8 +29,24 @@
                document.write(input*input*input);
                
                
+               var result;
                
+               function fio(i)
+               {
+                   var res = window.prompt("What is Your"+i+"? ");
+                   result=result+res+" ";
+               }
+               
+               var i="name";
+               fio(i);
+               i ="surname";
+               fio(i);
+               i ="age";
+               fio(i);
            
+               document.write(result);   
+               
+               
            </script>
            
         </div>
