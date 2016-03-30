@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <title>Курс по JS</title>
+        
+    </head>
+
+    <body>
+       <div>
+          
+           <script type="text/javascript">
+           
+               
+               var citi = "Kharkov";
+               
+               window.document.write(citi.charAt(1)+"<br>");
+               
+               
+               
+               
+               window.document.write(citi.charCodeAt(0)+"<br>");
+               
+               var alphabet = "аАбБвВгГдДеЕёЁжЖзЗиИкКлЛмМнНоОпПрРсСтТуУфФхХцЦчЧшШщЩьЬыЫъЪэЭюЮяЯ";
+               var alplen = alphabet.length;
+               
+               var newArray=[];
+               
+               for(var i=0;i<alplen;i++)
+                   {
+                       newArray[i]=alphabet.charCodeAt(i);
+                       window.document.write(alphabet.charCodeAt(i)+", ");
+                       
+                   }
+               
+               document.write(newArray.sort()+"<br>");
+               
+               newArray=newArray.sort();
+               
+               document.write(newArray+"<br>");
+               
+               var name = "Евгениаkоо";
+               
+               for(var i=0;i<name.length;i++)
+                   {
+                       if((name[i].charCodeAt()>=newArray[0])&&(name[i].charCodeAt()<=newArray[newArray.length-1]))
+                           {
+                                
+                           }
+                       else
+                       {
+                           document.write("<br><br>Найден не русский символ: <strong>"+name.charAt(i));
+                       }
+                   }
+               
+           </script>
+           
+        </div>
+    </body>
+</html>
