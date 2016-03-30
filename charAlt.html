@@ -54,6 +54,40 @@
                        }
                    }
                
+               
+               
+               
+               //======================HW=========================
+               
+               
+               var students = ["Илья","Greg", "Алина"];
+document.write("<br>");
+               for(var i=0;i<students.length;i++)
+                {
+        
+                   for(var j=0;j<students[i].length;j++)
+                       {
+                   
+                           if((students[i][j].charCodeAt()<=newArray[0])||(students[i][j].charCodeAt()>=newArray[newArray.length-1]))
+                               {
+                                   document.write("Не русский символ в массиве: "+i);
+                                   break;
+                               }
+                       }
+                }
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
            </script>
            
         </div>
