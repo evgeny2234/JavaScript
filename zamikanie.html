@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <title>Курс по JS</title>
+        
+    </head>
+
+    <body>
+       <div>
+          
+           <script type="text/javascript">
+           
+               
+    function makeShout() 
+       { // (1)
+            var phrase = "Превед!"  // (2)
+            var shout = function() 
+            {  // (3,4)
+                alert(phrase)
+            }
+            phrase = "Готово!"  // (5)
+            return shout
+       }
+    shout = makeShout()
+    // что выдаст?
+    shout()
+
+               
+               
+           </script>
+           
+        </div>
+    </body>
+</html>
