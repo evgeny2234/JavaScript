@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <title>Курс по JS</title>
+        
+    </head>
+
+    <body>
+       <div>
+          
+           <script type="text/javascript">
+           
+            var date = new Date();
+               
+            var from1970 = date.getTime();
+               
+               function f1(n)
+               {
+
+                   var days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thirsday", "Friday", "Saturday"];
+                   var monthes=["Jan", "Fab", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                   
+                   var year = date.getFullYear(); 
+                   var month = date.getMonth();
+                   var day = date.getDate();
+                   
+                   var dayint=parseInt(day);
+                   var newday = dayint+n;
+                   
+                   var f = new Date(year,month,newday);
+                   
+                   var fu = f.getTime();
+                   
+                   document.write("<br> Year:  "+f.getFullYear());
+                   document.write("<br> Month: "+monthes[f.getMonth()]);
+                   document.write("<br> Date:  "+f.getDate());
+                   document.write("<br> Day:  "+days[f.getDay()]);
+
+               }
+               
+               var n = prompt("How many days? ");
+               n=parseInt(n);
+               f1(n);
+               
+           </script>
+           
+        </div>
+    </body>
+</html>
