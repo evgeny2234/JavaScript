@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <title>Курс по JS</title>
+        
+    </head>
+
+    <body>
+       <div>
+          
+           <script type="text/javascript">
+           
+               
+               //pasreInt - преобразовывает целое число в виде строки в число
+               //pasreFloat - преобразовывает дробное число в виде строки в число
+               //Number - преобразовывает целое число в виде строки в число или булевое вырадение в число
+               
+               
+               var myString = "26.5 Апельсинов";
+               
+               var int = parseFloat(myString);
+               
+               document.write(int);
+               
+               
+               //-----------------HW-------------------------
+               var result = [];
+               
+               var myArray = ["100 попугаев", "201 рубль", "624 доллара", "109 кроликов", "33 весельчака", "62 кабана"];
+               document.write("<br>"+myArray+"<br>");
+               
+               function f1(myArray)
+               {
+                   for(var i=0;i<myArray.length;i++)
+                       {
+                            result[i]=parseInt(myArray[i]);
+                       }
+               }
+               
+               f1(myArray);
+
+               document.write(result);
+               
+           </script>
+           
+        </div>
+    </body>
+</html>
