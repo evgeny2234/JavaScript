@@ -21,25 +21,27 @@
                
                //--------------HW-------------------------
                
-               
                var arr = new Array(10);
                var min=5;
                var max=19;
                
                var mid;
                
+               document.write("<br>");
                
                function f1(arr,min,max)
                {
                    for(var i=0;i<arr.length;i++)
                        {
                            arr[i]=Math.random() * (max - min) + min;
-                           arr[i]=arr[i].toFixed(2);
+                           arr[i]=arr[i].toFixed(1);
                        }
                    return arr;
                }
               
                document.write(f1(arr,min,max));
+               
+               
            </script>
            
         </div>

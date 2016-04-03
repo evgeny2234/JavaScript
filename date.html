@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <title>Курс по JS</title>
+        
+    </head>
+
+    <body>
+       <div>
+          
+           <script type="text/javascript">
+           
+               
+            var date = new Date();
+               
+            var year=date.getFullYear();
+            document.write("Year: "+year+"<br>");
+            var month=date.getMonth()+1;
+            document.write("Month: "+month+"<br>");
+            var Date=date.getDate();
+            document.write("Date: "+Date+"<br>");
+            var day=date.getDay();
+            document.write("Day: "+day+"<br>");
+            var hours=date.getHours();
+            document.write("Hours: "+hours+"<br>");
+            var minutes=date.getMinutes();
+            document.write("Minutes: "+minutes+"<br>");
+            var seconds=date.getSeconds();
+            document.write("Seconds: "+seconds+"<br>");
+               
+               
+        //-----------------HW-----------------------
+               
+               
+               document.write(hours+":");
+               if(minutes>=0&&minutes<10)
+                  {
+                    document.write("0");
+                    document.write(minutes+":");
+                  }
+               else
+                   {
+                      document.write(minutes+":"); 
+                   }
+               if(seconds>=0&&seconds<10)
+                  {
+                    document.write("0");
+                    document.write(seconds);
+                  }
+               else
+                   {
+                      document.write(seconds); 
+                   }
+               
+               
+               
+           </script>
+           
+        </div>
+    </body>
+</html>
