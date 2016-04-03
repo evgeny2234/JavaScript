@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <title>Курс по JS</title>
+        
+    </head>
+
+    <body>
+       <div>
+          
+           <script type="text/javascript">
+           
+               
+               var price = 10.2;
+               
+               document.write(price.toFixed(3));
+               
+               //метод показывает сколько знаков после запятой надо вывести в числе. Т.к. просто так выводить будет только 1 знак после апятой, но может быть необходимо вывести больше знаков.
+            
+               //--------------------HW------------------
+               
+               var randSymbol = [10.5, 15, 112, 77.6];
+               document.write("<br>"+randSymbol+"<br>");
+               var res;
+               
+               function f1(randSymbol)
+               {
+                   for(var i=0;i<randSymbol.length;i++)
+                   {
+                       res = randSymbol[i].toFixed(2);
+                       randSymbol[i]=res;
+                   }
+               }
+               
+               f1(randSymbol);
+               document.write("<br>"+randSymbol+"<br>");
+           </script>
+           
+        </div>
+    </body>
+</html>
