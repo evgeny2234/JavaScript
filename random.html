@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <title>Курс по JS</title>
+        
+    </head>
+
+    <body>
+       <div>
+          
+           <script type="text/javascript">
+           
+               
+               var rand = Math.random()*100;
+               
+               rand=Math.ceil(rand.toFixed(3));
+            
+               document.write(rand);
+               
+               //--------------HW-------------------------
+               
+               
+               var arr = new Array(10);
+               var min=5;
+               var max=19;
+               
+               var mid;
+               
+               
+               function f1(arr,min,max)
+               {
+                   for(var i=0;i<arr.length;i++)
+                       {
+                           arr[i]=Math.random() * (max - min) + min;
+                           arr[i]=arr[i].toFixed(2);
+                       }
+                   return arr;
+               }
+              
+               document.write(f1(arr,min,max));
+           </script>
+           
+        </div>
+    </body>
+</html>
