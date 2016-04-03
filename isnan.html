@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <title>Курс по JS</title>
+        
+    </head>
+
+    <body>
+       <div>
+          
+           <script type="text/javascript">
+           
+               //var myString = "Всем привет, Меня зовут Жека, а 456555 еще Меня зовут evgeny2234 123333";
+               
+               var myString = "Апельсин";
+               
+               var num = "rbdb";
+               
+               if(isNaN(num))
+                   {
+                       document.write("не число");
+                   }
+               else{
+                   document.write("число");
+               }
+               
+               //-----------------HW----------------
+               
+               var randSimbol = ["Молоко", 77, 11, "Мед", -88];
+               
+               
+               document.write("<br>"+randSimbol+"<br>");
+               
+               for(var i =0;i<randSimbol.length;i++)
+               {
+                   if(isNaN(randSimbol[i]))
+                       {
+                           document.write(randSimbol[i]+" - не число<br>");
+                       }
+                   else 
+                   {
+                       document.write(randSimbol[i]+" - число<br>");
+                   }
+               }
+               
+               
+               
+               
+           </script>
+           
+        </div>
+    </body>
+</html>
