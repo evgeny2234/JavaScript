@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <title>Курс по JS</title>
+        
+    </head>
+
+    <body>
+       <div>
+          
+           <script type="text/javascript">
+           
+               //var myString = "Всем привет, Меня зовут Жека, а 456555 еще Меня зовут evgeny2234 123333";
+               
+               var myString = "http://freelance,ua https://www,youtube,com https://mail,google,com https://try,github,io www,kickstarter,com";
+               
+               var regV = /,/g;
+               
+               var res = myString.replace(regV, '.');
+               
+               document.write(res);
+               
+               //---------------HW------------------
+               document.write("<br>");
+               
+               function replace(number,symbol)
+               {
+                   var regV=/\//g;
+                   var res = number.replace(regV, symbol);
+                   document.write(res);    
+               }
+               
+               var number = "8/093/400/31/58";
+               
+               var symbol = "-";
+               
+               replace(number,symbol);
+               
+               
+               
+               
+               
+           </script>
+           
+        </div>
+    </body>
+</html>
