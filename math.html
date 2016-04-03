@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <title>Курс по JS</title>
+        
+    </head>
+
+    <body>
+       <div>
+          
+           <script type="text/javascript">
+           
+               
+               var price = 10.56;
+               
+               document.write(Math.round(price));
+               
+               
+               //метод round округляет число.
+               //метод ceil округляет всегда вверх
+               //метод floor округляет всегда вниз 
+               
+               
+               //-----------------------HW------------------------
+               
+               
+               var num = [34.82, 12.90, 17.01, 78.51];
+               
+               function f1(num,method)
+               {
+                   if(method=='floor')
+                       {
+                           for(var i=0;i<num.length;i++)
+                               {
+                                   num[i]=Math.floor(num[i]);
+                               }
+                       }
+                   if(method=='ceil')
+                       {
+                           for(var i=0;i<num.length;i++)
+                               {
+                                   num[i]=Math.ceil(num[i]);
+                               }
+                       }
+                   if(method=='round')
+                       {
+                           for(var i=0;i<num.length;i++)
+                               {
+                                   num[i]=Math.round(num[i]);
+                               }
+                       }
+               }
+               
+               
+               var method="floor";
+               
+               f1(num, method);
+               
+               document.write("<br>"+num);
+               
+               
+           </script>
+           
+        </div>
+    </body>
+</html>
