@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <title>Курс по JS</title>
+        
+    </head>
+
+    <body>
+       <div>
+          
+           <script type="text/javascript">
+           
+                var name="Evgeny";
+               
+               function f1()
+               {
+                   var id = setInterval("document.write(\"Evgeny\")",1000);
+                   clearInterval(id);
+               }
+               f1();
+               
+               
+               //settimeout - выполнение кода через опредеенное время
+               
+               //setinterval - выполнение кода в цикле через определенные промежутки времени
+               
+               //clearInterval - прекращение выполнения setinterval
+               //для этого сперва помещаем в переменную ID идентификатор setInterval и потом вызываем метод clearinterval с параметром этой переменно йс идентификатором.
+               
+           </script>
+           
+        </div>
+    </body>
+</html>
