@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <title>Курс по JS</title>
+        
+    </head>
+
+    <body>
+       <div>
+          
+           <script type="text/javascript">
+           
+            for(var i in navigator)
+                {
+                    document.write(i + " : " + navigator[i] + "<br>");
+                }
+
+               
+               document.write("<br>"+"<br>"+navigator.userAgent);
+               document.write("<br>"+"<br>"+navigator.appVersion);
+               document.write("<br>"+"<br>"+navigator.language);
+               
+               document.write("<br>"+"<br>"+screen.availHeight);
+               
+               
+               
+               
+               //---------------HW---------------------
+               var browsers = ["Opera", "Chrome", "Mozilla", "ie"];
+               
+               
+               for(var i=0; i<browsers.length;i++)
+               {
+                   var res = navigator.userAgent.match(browsers[i]);
+                   if(res==browsers[i])
+                       {
+                           document.write("Your Browser: "+browsers[i]);
+                           break;
+                       }
+               }
+
+           </script>
+           
+        </div>
+    </body>
+</html>
