@@ -17,8 +17,7 @@
                car.maxSpeed = 300;
                car.price = 400000;
                
-               document.write(car.color);
-               
+               document.write(car.color+"<br>");
                
                var man = {
                    age: 10,
@@ -26,9 +25,42 @@
                    surname: "Pischikov"
                };
                
-               document.write(man.name);
+               document.write(man.name+"<br>");
+               
+               var x = "age";
+               
+               document.write(man[x]);       
+               
+               //--------------------------------------------------
+               //--------------------------------------------------
+               
+               var trip = {
+                   bukovel: 3000,
+                   egypt: 5000,
+                   usa: 10000
+               };
+               
+               trip.calc = function (num,days,way) 
+               {
+                   var result = num*days*this[way];
+                   return result;
+               }
+               
+               var way = "usa";
+               
+               var res=trip.calc(2,5,way);
+               
+               document.write("<br>"+res+"<br><br>");
                
                
+               //------------------------------------------------
+               //метод for (var i in man) в цике выводит Все методы данного обхекта и после их значения
+               
+               for (var i in man)
+               {
+                   document.write(i + ": " + man[i] + "<br>");
+               }
+                           
            </script>
            
         </div>
